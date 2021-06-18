@@ -1,0 +1,160 @@
+{
+	"best-products" : [
+		{
+			"id" 	: 1,
+			"kode"	: "K-01",
+			"nama"	: "AUDACITY C BLACK WHITE",
+			"harga"	: 250000,
+			"is_ready"	: true,
+			"gambar" : "audacity-c-black-white.jpg"
+		},
+		{
+			"id" 	: 2,
+			"kode"	: "K-02",
+			"nama"	: "AUDACITY C OLIVE BLACK",
+			"harga"	: 425000,
+			"is_ready"	: true,
+			"gambar" : "udacity-c-olive-black.jpg"
+		},
+		{
+			"id" 	: 3,
+			"kode"	: "K-03",
+			"nama"	: "AUDACITY C POWER BLUE",
+			"harga"	: 4325000,
+			"is_ready"	: true,
+			"gambar" : "audacity-c-power-blue.jpg"
+		},
+		{
+			"id" 	: 5,
+			"kode"	: "K-05",
+			"nama"	: "ACHIBI MARU CATHARSIS WS",
+			"harga"	: 329000,
+			"is_ready"	: true,
+			"gambar" : "chibi-maru-catharsis-ws.jpg"
+		}
+	],
+	"products" : [
+		{
+			"id" 	: 1,
+			"kode"	: "K-01",
+			"nama"	: "AUDACITY C BLACK WHITE",
+			"harga"	: 250000,
+			"is_ready"	: true,
+			"gambar" : "audacity-c-black-white.jpg"
+		},
+		{
+			"id" 	: 2,
+			"kode"	: "K-02",
+			"nama"	: "AUDACITY C OLIVE BLACK",
+			"harga"	: 425000,
+			"is_ready"	: true,
+			"gambar" : "udacity-c-olive-black.jpg"
+		},
+		{
+			"id" 	: 3,
+			"kode"	: "K-03",
+			"nama"	: "AUDACITY C POWER BLUE",
+			"harga"	: 4325000,
+			"is_ready"	: true,
+			"gambar" : "audacity-c-power-blue.jpg"
+		},
+		{
+			"id" 	: 4,
+			"kode"	: "K-04",
+			"nama"	: "AUDACITY C OLIVE BLACK",
+			"harga"	: 425000,
+			"is_ready"	: true,
+			"gambar" : "udacity-c-olive-black.jpg"
+		},
+		{
+			"id" 	: 5,
+			"kode"	: "K-05",
+			"nama"	: "ACHIBI MARU CATHARSIS WS",
+			"harga"	: 329000,
+			"is_ready"	: true,
+			"gambar" : "chibi-maru-catharsis-ws.jpg"
+		},
+		{
+			"id" 	: 6,
+			"kode"	: "K-06",
+			"nama"	: "CHIBI MARU OBSIDIAN RED WS",
+			"harga"	: 329000,
+			"is_ready"	: true,
+			"gambar" : "chibi-maru-obsidian-red-ws.jpg"
+		},
+		{
+			"id" 	: 7,
+			"kode"	: "K-07",
+			"nama"	: "CORAGGIO CONCRETE",
+			"harga"	: 405000,
+			"is_ready"	: true,
+			"gambar" : "coraggio-concrete.jpg"
+		},
+		{
+			"id" 	: 8,
+			"kode"	: "K-08",
+			"nama"	: "CORAGGIO PINE GREEN",
+			"harga"	: 405000,
+			"is_ready"	: true,
+			"gambar" : "coraggio-pine-green.jpg"
+		},
+		{
+			"id" 	: 9,
+			"kode"	: "K-09",
+			"nama"	: "CRUISE BLACK GUM",
+			"harga"	: 395000,
+			"is_ready"	: true,
+			"gambar" : "cruise-black-gum.jpg"
+		},
+		{
+			"id" 	: 10,
+			"kode"	: "K-10",
+			"nama"	: "FLEXKNIT V3.0 CARBON BLACK",
+			"harga"	: 415000,
+			"is_ready"	: true,
+			"gambar" : "flexknit-v3-0-carbon-black-2.jpg"
+		},
+		{
+			"id" 	: 11,
+			"kode"	: "K-11",
+			"nama"	: "FORGE GREY WHITE",
+			"harga"	: 415000,
+			"is_ready"	: true,
+			"gambar" : "forge-grey-white.jpg"
+		},
+		{
+			"id" 	: 12,
+			"kode"	: "K-12",
+			"nama"	: "SN-02 BLACK WHITE SOLE",
+			"harga"	: 302000,
+			"is_ready"	: true,
+			"gambar" : "sn-02-black-white-sole.png"
+		},
+		{
+			"id" 	: 13,
+			"kode"	: "K-13",
+			"nama"	: "YOGA FLEXKNIT V2.0 TRIPLE WHITE",
+			"harga"	: 415000,
+			"is_ready"	: true,
+			"gambar" : "yoga-flexknit-v2-0-triple-white.png"
+		},
+		{
+			"id" 	: 14,
+			"kode"	: "K-14",
+			"nama"	: "NEXT-GEN MONOTRANSLUCENT MARSHMALLOW",
+			"harga"	: 425000,
+			"is_ready"	: true,
+			"gambar" : "next-gen-monotranslucent-marshmallow.jpg"
+		},
+		{
+			"id" 	: 15,
+			"kode"	: "K-15",
+			"nama"	: "MARU CATHARSIS WS",
+			"harga"	: 359000,
+			"is_ready"	: true,
+			"gambar" : "maru-catharsis-ws.jpg"
+		}
+	],
+	"keranjangs" : [],
+	"pesanans" : []
+}
