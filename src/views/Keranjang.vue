@@ -1,6 +1,6 @@
 <template>
   <div class="keranjang">
-    <Navbar :updateKeranjang="keranjangs"/>
+    <Navbar :updateKeranjang="keranjangs" />
     <div class="container">
       <div class="row mt-4">
         <div class="col">
@@ -112,34 +112,36 @@ export default {
       this.keranjangs = data;
     },
     hapusKeranjang(id) {
-      /** Delete data */
-      axios
-        .delete("http://localhost:3000/keranjangs/" + id)
-        .then(() => {
-          this.$toast.success("Berhasil menghapus produk.", {
-            type: "success",
-            position: "top-right",
-            duration: 3000,
-            dismissible: true,
-          });
+      if (confirm("Apakah kamu ingin menghapus produk ini?")) {
+        /** Delete data */
+        axios
+          .delete("http://localhost:3000/keranjangs/" + id)
+          .then(() => {
+            this.$toast.success("Berhasil menghapus produk.", {
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
 
-          /** Update data */
-          axios
-            .get("http://localhost:3000/keranjangs")
-            .then((response) =>
-              // handle success
-              //console.log(response);
-              this.setKeranjangs(response.data)
-            )
-            .catch((error) =>
-              // handle error
-              console.log(error)
-            );
-        })
-        .catch((error) =>
-          // handle error
-          console.log(error)
-        );
+            /** Update data */
+            axios
+              .get("http://localhost:3000/keranjangs")
+              .then((response) =>
+                // handle success
+                //console.log(response);
+                this.setKeranjangs(response.data)
+              )
+              .catch((error) =>
+                // handle error
+                console.log(error)
+              );
+          })
+          .catch((error) =>
+            // handle error
+            console.log(error)
+          );
+      }
     },
   },
   mounted() {
