@@ -22,3 +22,16 @@
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
+
+.brc {
+    background-color: transparent;
+}
+
+.breadcumb-item.active {
+    font-weight: bold;
+    color: black;
+}
+
+.detail-image {
+    border-radius: 10px;
+}
