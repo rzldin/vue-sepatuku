@@ -22,3 +22,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## load database
+```
+Go to folder vue-backend/database
+```
+
+## Starts JSON Server
+```
+json-server --watch db.json
+```
