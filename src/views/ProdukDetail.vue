@@ -93,7 +93,7 @@ export default {
       if (this.pesan.jumlah_pemesanan) {
         this.pesan.products = this.product;
         axios
-          .post("http://localhost:3000/keranjangs", this.pesan)
+          .post("https://fake-server-sepatukuu-app.herokuapp.com/keranjangs", this.pesan)
           .then(() => {
             this.$router.push({ path : '/keranjang' })
             this.$toast.success("Berhasil masuk keranjang.", {
@@ -116,7 +116,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/products/" + this.$route.params.id)
+      .get("https://fake-server-sepatukuu-app.herokuapp.com/products/" + this.$route.params.id)
       .then((response) =>
         // handle success
         //console.log(response);

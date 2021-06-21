@@ -115,7 +115,7 @@ export default {
       if (confirm("Apakah kamu ingin menghapus produk ini?")) {
         /** Delete data */
         axios
-          .delete("http://localhost:3000/keranjangs/" + id)
+          .delete("https://fake-server-sepatukuu-app.herokuapp.com/keranjangs/" + id)
           .then(() => {
             this.$toast.success("Berhasil menghapus produk.", {
               type: "success",
@@ -126,7 +126,7 @@ export default {
 
             /** Update data */
             axios
-              .get("http://localhost:3000/keranjangs")
+              .get("https://fake-server-sepatukuu-app.herokuapp.com/keranjangs")
               .then((response) =>
                 // handle success
                 //console.log(response);
@@ -146,7 +146,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/keranjangs")
+      .get("https://fake-server-sepatukuu-app.herokuapp.com/keranjangs")
       .then((response) =>
         // handle success
         //console.log(response);

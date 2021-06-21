@@ -49,7 +49,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/best-products")
+      .get("https://fake-server-sepatukuu-app.herokuapp.com/best-products")
       .then((response) =>
         // handle success
         //console.log(response);

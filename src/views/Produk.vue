@@ -66,7 +66,7 @@ export default {
     /** Untuk Mencari Product */
     searchProduct() {
       axios
-        .get("http://localhost:3000/products?q="+this.search)
+        .get("https://fake-server-sepatukuu-app.herokuapp.com/products?q="+this.search)
         .then((response) =>
           // handle success
           //console.log(response);
@@ -80,7 +80,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/products")
+      .get("https://fake-server-sepatukuu-app.herokuapp.com/products")
       .then((response) =>
         // handle success
         //console.log(response);
