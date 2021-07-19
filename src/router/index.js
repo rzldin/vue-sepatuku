@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Produk from '../views/Produk.vue'
 import ProdukDetail from '../views/ProdukDetail.vue'
 import Keranjang from '../views/Keranjang.vue'
+import PesananSukses from '../views/PesananSukses.vue'
 
 Vue.use(VueRouter)
 
@@ -29,10 +30,16 @@ const routes = [
     component : Keranjang
   },
   {
+    path : '/pesanan-sukses',
+    name : 'PesananSukses',
+    component : PesananSukses
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+
 ]
 
 const router = new VueRouter({

@@ -89,6 +89,34 @@
           </div>
         </div>
       </div>
+      <!--- Form Checkout --->
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <form class="mt-4" v-on:submit.prevent>
+            <div class="form-group">
+              <label for="nama">Nama :</label>
+              <input type="text" class="form-control" v-model="pesan.nama" />
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat :</label>
+              <textarea
+                rows="3"
+                v-model="pesan.alamat"
+                class="form-control"
+                placeholder="Masukan Alamat .."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-dark float-right"
+              @click="checkout"
+            >
+              <b-icon-cart></b-icon-cart> Pesan
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -105,6 +133,7 @@ export default {
   data() {
     return {
       keranjangs: [],
+      pesan: {},
     };
   },
   methods: {
@@ -115,7 +144,9 @@ export default {
       if (confirm("Apakah kamu ingin menghapus produk ini?")) {
         /** Delete data */
         axios
-          .delete("https://fake-server-sepatukuu-app.herokuapp.com/keranjangs/" + id)
+          .delete(
+            "https://fake-server-sepatukuu-app.herokuapp.com/keranjangs/" + id
+          )
           .then(() => {
             this.$toast.success("Berhasil menghapus produk.", {
               type: "success",
@@ -141,6 +172,43 @@ export default {
             // handle error
             console.log(error)
           );
+      }
+    },
+    checkout() {
+      if (this.pesan.nama && this.pesan.alamat) {
+        this.pesan.keranjangs = this.keranjangs;
+        axios
+          .post(
+            "https://fake-server-sepatukuu-app.herokuapp.com/pesanans",
+            this.pesan
+          )
+          .then(() => {
+
+            /** Hapus semua Keranjang **/
+            this.keranjangs.map(function (item) {
+              return axios.delete(
+                "https://fake-server-sepatukuu-app.herokuapp.com/keranjangs/" +item.id)
+                   .catch((error) =>
+                    // handle error
+                    console.log(error));
+            });
+
+            this.$router.push({ path: "/pesanan-sukses" });
+            this.$toast.success("Berhasil Di pesan.", {
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
+          })
+          .catch((error) => console.log(error));
+      } else {
+        this.$toast.error("Nama dan Alamat harus diisi.", {
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
       }
     },
   },
